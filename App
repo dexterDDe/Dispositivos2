@@ -11,7 +11,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Referenciamos los elementos del layout
         val logoImageView: ImageView = findViewById(R.id.logoImageView)
         val nameTextView: TextView = findViewById(R.id.nameTextView)
         val jobTitleTextView: TextView = findViewById(R.id.jobTitleTextView)
@@ -19,14 +18,12 @@ class MainActivity : AppCompatActivity() {
         val socialMediaTextView: TextView = findViewById(R.id.socialMediaTextView)
         val emailTextView: TextView = findViewById(R.id.emailTextView)
 
-        // Asignamos los valores a los TextView
         nameTextView.text = "Daisy Merzario" 
         jobTitleTextView.text = "Android Developer Extraordinaire"
         phoneTextView.text = "+123654789" 
         socialMediaTextView.text = "@AndroidDev"
         emailTextView.text = "jen.doe@android.com"
 
-        // Asignamos la imagen al ImageView desde los recursos
         logoImageView.setImageResource(R.drawable.logoA)
     }
 }

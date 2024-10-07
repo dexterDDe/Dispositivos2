@@ -1,0 +1,32 @@
+package com.daisymerzario.App 
+
+import android.os.Bundle
+import android.widget.ImageView
+import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
+
+class MainActivity : AppCompatActivity() {
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        // Referenciamos los elementos del layout
+        val logoImageView: ImageView = findViewById(R.id.logoImageView)
+        val nameTextView: TextView = findViewById(R.id.nameTextView)
+        val jobTitleTextView: TextView = findViewById(R.id.jobTitleTextView)
+        val phoneTextView: TextView = findViewById(R.id.phoneTextView)
+        val socialMediaTextView: TextView = findViewById(R.id.socialMediaTextView)
+        val emailTextView: TextView = findViewById(R.id.emailTextView)
+
+        // Asignamos los valores a los TextView
+        nameTextView.text = "Daisy Merzario" 
+        jobTitleTextView.text = "Android Developer Extraordinaire"
+        phoneTextView.text = "+123654789" 
+        socialMediaTextView.text = "@AndroidDev"
+        emailTextView.text = "jen.doe@android.com"
+
+        // Asignamos la imagen al ImageView desde los recursos
+        logoImageView.setImageResource(R.drawable.logoA)
+    }
+}
